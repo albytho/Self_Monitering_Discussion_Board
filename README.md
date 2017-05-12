@@ -1,3 +1,4 @@
-# Simple_Public_Billboard
+# Self_Monitering_Discussion_Board
 
-My first project where I integrate flask and python together to make a billboard app that displays the text that people submit
+This is a web app that replicated a discussion board where people can publically post comments.  Each of these comments
+go through a sentiment analysis to filter out the negative comments
