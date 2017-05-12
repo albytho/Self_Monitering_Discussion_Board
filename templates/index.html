@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<center>
+			<h1>Want to give a shoutout?</h1>
+			<form method="POST" action="/send">
+				<div class="form-group">
+					<textarea class="form-control" rows="3" name="words"></textarea>
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</center>
+		{% for post in posts %}
+			<h1> {{post.text}} </h1>
+		{% endfor %}
+	</body>
+</html>
